@@ -1,8 +1,3 @@
-:root {
-    --radius: 5px;
-    --padding: 10px;
-}
-
 body {
     background-color: #cccccc;
     font-family: sans-serif;
@@ -69,12 +64,18 @@ body {
     padding: 5%;
 }
 
+#gallery-container figure img {
+
+max-width: 100%;
+}
+
 #gallery-container img {
     display: block;
     max-width: 650px;
     margin: 0 auto;
     border-bottom: solid 10px; 
     border-color: #97bf04
+
    
 }
 
@@ -130,6 +131,11 @@ body {
    grid-template-columns: 1fr;
   
 }
+
+#gallery-container figure:last-child
+{
+    grid-column: span 1; }
+
 .header-container ul {
     flex-direction: column;
     padding-bottom: 2rem;

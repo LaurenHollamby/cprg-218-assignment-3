@@ -50,6 +50,8 @@ body {
       footer {
         background-color: #d9043d;
         padding: 1rem;
+        color: #FFFFFF;
+        text-align: center;
       }
 
 
@@ -103,7 +105,7 @@ max-width: 100%;
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
     #gallery-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -152,6 +154,11 @@ max-width: 100%;
     border-width: 2px;
     gap: 5px;
     
+  }
+
+  .header-container nav ul li
+  {
+    margin: 1rem;
   }
 }
 

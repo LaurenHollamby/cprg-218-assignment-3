@@ -82,7 +82,7 @@ body {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    #gallery-container img.tiger
+    #gallery-container figure :last-child
     {
         grid-column: span 2;
     }
@@ -106,7 +106,7 @@ body {
         grid-template-columns: 1fr 1fr;
        
     }
-    #gallery-container img.tiger
+    #gallery-container figure :last-child
     {
         grid-column: span 2;
     }

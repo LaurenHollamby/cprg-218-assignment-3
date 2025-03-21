@@ -1,0 +1,135 @@
+:root {
+    --radius: 5px;
+    --padding: 10px;
+}
+
+body {
+    background-color: #cccccc;
+    font-family: sans-serif;
+}
+
+
+.header-container {
+    background-color: #120323;
+    color: #97bf04;
+    text-align: center;
+    width: 100%;
+    padding: var(--padding);
+    margin: 0;
+    margin-bottom: 10px; }
+
+    .header-container ul {
+        padding: 0;
+        margin: 0;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 1%;
+    
+    }
+
+     .header-container ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+      }
+      
+      .header-container ul li a:hover {
+        text-decoration: none;
+        color: #000000;
+      } 
+
+
+      h2 {
+        text-align: center;
+      }
+
+
+      footer {
+        background-color: #d9043d;
+      }
+
+
+
+#gallery-container {
+    display: grid;
+    gap: 10px;
+}
+
+#gallery-container figure   {
+    background-color: #FFFFFF;
+    padding: 5%;
+}
+
+#gallery-container img {
+    border-bottom: solid 10px; 
+    border-color: #97bf04
+}
+
+
+@media screen and (min-width: 1001px) {
+    #gallery-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #gallery-container img.tiger
+    {
+        grid-column: span 2/4;
+    }
+
+    .header-container ul li {
+        list-style: none;
+        text-align: center;
+        background-color: #d9043d;
+        margin: 0;
+        width: 100%;
+        line-height: 60px;
+      }
+      
+    }
+
+
+
+@media screen and (max-width: 1000px) {
+    #gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+    }
+    #gallery-container img.tiger
+    {
+        grid-column: 2 / 4;
+    }
+
+    .header-container ul li {
+        list-style: none;
+        text-align: center;
+        background-color: #d9043d;
+        margin: 0;
+        width: 100%;
+        line-height: 60px;
+      }
+
+}
+
+@media screen and (max-width: 768px) {
+#gallery-container {
+   display: grid;
+   grid-template-columns: 1fr;
+  
+}
+.header-container ul li {
+    list-style: none;
+    text-align: center;
+    background-color: #d9043d;
+    margin: 0;
+    width: 95%;
+    line-height: 60px;
+    border: solid #97bf04;
+    border-width: 1px;
+    flex: 1;
+    flex-wrap: wrap;
+    
+  }
+}
+
